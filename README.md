@@ -1,46 +1,19 @@
-# Getting Started with Create React App
+Module 7 - D9
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Today you'll create a new TypeScript application from scratch.
+    The purpose is to fulfill the requirements trying also to implement as best as you can typings and interfaces.
+    The application will be a music search engine.
+    Implement a nice main page with the search input and use the same page to show the search results.
+    Clicking on any result should bring the user on a detail page, which will fetch the data for that particular track.
+    Show on this detail page information you consider relevant about the song (i.e. title, album, duration ecc.)
+    API:
+    ---------------------------------------------------------------------------
+    For the main search use https://deezerdevs-deezer.p.rapidapi.com/search?q=whatever to get some results
+    Use the id property of any resulting track to fetch detail information with https://deezerdevs-deezer.p.rapidapi.com/track/:id
+    Don't forget to insert your usual host & key headers in your fetches!
+    ---------------------------------------------------------------------------
+    HINTS:
+    - As usual split your application in many reusable components
+    - Implement props & state interfaces for each one of them
+    - Skip the Redux approach and fetch data directly in your components and store them
+    in local states (we didn't had the chance to talk about Redux typings)
